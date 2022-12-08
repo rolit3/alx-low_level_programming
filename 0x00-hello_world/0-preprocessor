@@ -1,2 +1,2 @@
 #!/bin/bash
-betty main.c > file
+gcc main.c -o c | betty c > CFILE
