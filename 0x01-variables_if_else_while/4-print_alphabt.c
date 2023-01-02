@@ -4,7 +4,7 @@
 /**
  * main - Entry
  * Write a program that prints the alphabet in lowercase,
- * followed by a new line.
+ * followed by a new line and without e and q.
  * Return: Always 0
  */
 int main(void)
@@ -16,7 +16,11 @@ int main(void)
 
 	for (i = 97; i <= 122; i++)
 	{
-		putchar(i);
+		if(i != 102 || i != 113)
+		{
+			putchar(i);
+		}
 	}
+	putchar('\n');
 	return (0);
 }
