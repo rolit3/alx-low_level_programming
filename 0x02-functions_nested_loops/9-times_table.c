@@ -1,23 +1,47 @@
 #include "main.h"
-
 /**
- * jack_bauer - PWrite a function that prints the 9 times table,
- * starting with 0.
+ * times_table - Write a function that prints the 9 times table, starting with 0.
+ *
+ * Return: Always 0.
  */
-void jack_bauer(void)
+void times_table(void)
 {
-	int hour, minute;
-
-	for (hour = 0; hour <= 23; hour++)
-	{
-		for (minute = 0; minute <= 59; minute++)
-		{
-			_putchar((hour / 10) + '0');
-			_putchar((hour % 10) + '0');
-			_putchar(':');
-			_putchar((minute / 10) + '0');
-			_putchar((minute % 10) + '0');
-			_putchar('\n');
-		}
-	}
+int a;
+int b;
+int c;
+for (a = 0; a <= 9; a++)
+{
+for (b = 0; b <= 9; b++)
+{
+c = a * b;
+if ((c / 10) == 0)
+{
+if (b == 0)
+{
+_putchar ('0');
+}
+if (b != 0)
+{
+_putchar (' ');
+_putchar ((c % 10) + '0');
+}
+if (b < 9)
+{
+_putchar(',');
+_putchar (' ');
+}
+}
+else
+{
+_putchar ((c / 10) + '0');
+_putchar ((c % 10) + '0');
+if (b < 9)
+{
+_putchar(',');
+_putchar (' ');
+}
+}
+}
+_putchar ('\n');
+}
 }
