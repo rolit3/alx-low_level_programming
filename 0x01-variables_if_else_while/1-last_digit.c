@@ -1,12 +1,12 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 
 /**
- * main - Print last digits
- *
- * Return: 0
-*/
+ * main - Entry
+ * Print the last number stored in n variable
+ * Return: Always 0
+ */
 int main(void)
 {
 	int n;
