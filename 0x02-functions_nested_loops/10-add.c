@@ -2,9 +2,7 @@
 #include <stdio.h>
 
 /**
- * add -prints add two numbers
- *@i: print int i
- *@k: print int k
+ * add - Write a function that adds two integers and returns the result.
  * Return: Always 0.
  */
 
