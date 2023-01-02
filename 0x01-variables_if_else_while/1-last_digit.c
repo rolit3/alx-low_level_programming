@@ -6,22 +6,28 @@
  *  Print the last number stored in n variable
  *  Return: Always 0
  */
+
 int main(void)
 {
-	int n;
+	int n, luhn_algo;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	if (n < 6 && n != 0)
+	luhn_algo = n % 10;
+	printf("Last digit of %d is %d ", n, luhn_algo);
+	if (luhn_algo > 5)
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
-	} else if (n == 0)
-	{
-		printf("Last digit of %d is %d and is 0\n", n, n % 10);
-	} else
-	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, n % 10);
+		printf("and is greater than 5");
 	}
+	if (luhn_algo == 0)
+	{
+		printf("and is 0");
+	}
+	if (luhn_algo < 0 && luhn_algo != 0)
+	{
+		printf("and is less than 6 and not 0");
+	}
+
+	printf("%d\n", n);
 	return (0);
 }
