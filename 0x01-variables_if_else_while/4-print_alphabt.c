@@ -11,12 +11,14 @@ int main(void)
 {
 	/**
 	 * a to z : 97 - 122
+	 * e is 101
+	 * q is 113
 	 */
 	int i;
 
 	for (i = 97; i <= 122; i++)
 	{
-		if(i != 102 || i != 113)
+		if (i != 101 || i != 113)
 		{
 			putchar(i);
 		}
