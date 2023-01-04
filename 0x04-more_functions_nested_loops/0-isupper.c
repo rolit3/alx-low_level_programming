@@ -9,10 +9,10 @@
  */
 int _isupper(int c)
 {
-int a = isupper(c);
+    int a = isupper(c);
 
-if (a == 0)
-return (a);
-else
-return (1);
+    if (a == 0)
+        return (a);
+    else
+        return (1);
 }
