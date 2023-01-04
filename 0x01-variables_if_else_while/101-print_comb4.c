@@ -1,34 +1,44 @@
 #include <stdio.h>
 
 /**
- *main - Prints all possible combinations of two two-digit numbers,
- *        ranging from 0-99, separated by a comma followed by a space.
+ * main - Prints numbers between 012 to 789.
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-int i, j;
+int i, e, g;
 
-for (i = 0; i < 100; i++)
+i = 48;
+e = 48;
+g = 48;
+
+while (e < 58)
 {
-for (j = 0; j < 100; j++)
+i = 48;
+while (i < 58)
 {
-if (i < j)
+g = 48;
+while (g < 58)
 {
-putchar((i / 10) + 48);
-putchar((i % 10) + 48);
+if (e != i && e != g && i != g && e < i && i < g)
+{
+putchar(e);
+putchar(i);
+putchar(g);
+if (i == 56 && e == 55 && g == 57)
+{
+break;
+}
+putchar(',');
 putchar(' ');
-putchar((j / 10) + 48);
-putchar((j % 10) + 48);
-if (i != 98 || j != 99)
-{
-puts(",");
-puts(" ");
 }
+g++;
 }
+i++;
 }
+e++;
 }
-puts("\n");
+putchar('\n');
 return (0);
 }
