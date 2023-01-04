@@ -1,8 +1,5 @@
 #include <stdio.h>
-/**
- * main - Entry
- * Return: no return.
- */
+
 int main(void)
 {
 int n;
