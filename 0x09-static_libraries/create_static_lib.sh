@@ -1,3 +1,4 @@
 #!/bin/bash
-ar rcs libmy.a && ar rcs libmy.a *.o 
+ar -rc libmy.a *.o
+ranlib liball.o
 
