@@ -1,4 +1,5 @@
 #!/bin/bash
-ar -rc libmy.a *.o
+gcc *.c
+ar -rc liball.a *.o
 ranlib liball.o
 
